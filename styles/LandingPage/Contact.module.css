@@ -1,0 +1,75 @@
+.parent {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding: 8rem 3rem;
+  position: relative;
+  background: rgba(30, 30, 32, 0.5);
+}
+
+@media (max-width:800px) {
+    .parent{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media (max-width:600px) {
+.parent{
+    padding: 5rem 1.5rem ;
+}
+}
+
+.parent > p {
+  flex: 1.5;
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 66px;
+  color: #ffffff;
+}
+.parent > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.8;
+}
+
+.parent button {
+  width: 165px;
+  background: #5454d4;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  border: 0;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width:800px) {
+    .parent{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .parent > p {
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
+
+
+.img1 {
+    position: absolute;
+    bottom:1rem;
+    left:1rem;
+}
+
+.img2 {
+    position: absolute;
+    top:1rem;
+    right:1rem;
+}

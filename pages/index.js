@@ -1,3 +1,5 @@
+import Contact from "@/components/contact/Contact"
+import Footer from "@/components/Footer/Footer"
 import Header from "@/components/Header/Header"
 import MovieSec from "@/components/MovieSec/MovieSec"
 import Navbar from "@/components/Navbar/Navbar"
@@ -13,6 +15,8 @@ function Home() {
       <MovieSec />
       <Services />
       <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   )
 }

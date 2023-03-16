@@ -1,0 +1,60 @@
+.parent {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0px 4rem 0px ;
+}
+
+.parent > div:nth-child(1) {
+  flex: 0.5;
+}
+.parent > div:nth-child(2) {
+  flex: 3.5;
+}
+.parent > div:nth-child(3) {
+  flex: 1.5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.parent>  div > p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.parent > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.parent > div:nth-child(3) {
+    text-align: right ;
+}
+@media (max-width:800px) {
+    .parent {
+        flex-direction: column;
+        padding: 4rem 0px 2rem 0px;
+    }
+    .parent > div {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent p {
+        text-align: center !important;
+    }
+    .parent > div:nth-child(3) {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
