@@ -1,0 +1,131 @@
+.parent {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.tri {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+@media (max-width: 851px) {
+  .tri {
+    top: -3rem;
+    left: -1rem;
+  }
+  .parent > p {
+    padding-top: 3rem;
+  }
+}
+
+.parent > p {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cardsParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem 0px;
+  padding: 2rem 0px 4rem 0px;
+  position: relative;
+}
+
+.plus1 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: rotate(65deg);
+}
+
+.plus2 {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transform: rotate(20deg);
+}
+
+
+@media (max-width:600px) {
+    .plus1 {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        transform: rotate(0deg);
+      }
+      
+      .plus2 {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        transform: rotate(0deg);
+      }
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  gap: 1rem;
+  padding: 0px 1rem;
+}
+
+@media (min-width: 1200px) {
+  .card {
+    padding: 0px 2rem;
+  }
+}
+@media (max-width: 850px) {
+  .card {
+    width: 45%;
+  }
+  .parent > p {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    width: 80%;
+  }
+  .parent > p {
+    font-size: 40px;
+    text-align: left;
+  }
+}
+
+.card > p:nth-child(2) {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.750316px;
+  color: #ffffff;
+}
+
+.card > p:nth-child(3) {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.500211px;
+  color: rgba(255, 255, 255, 0.7);
+}

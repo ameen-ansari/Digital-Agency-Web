@@ -1,0 +1,139 @@
+.parent {
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 2rem;
+}
+
+.parent > div:nth-child(1) {
+  flex: 1;
+}
+.parent > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .parent > div:nth-child(2) {
+    flex: 1.5;
+  }
+}
+.parent > div:nth-child(2) > p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.7);
+  flex: none;
+  order: 1;
+}
+@media (max-width: 850px) {
+  .parent > div:nth-child(2) {
+    flex: 1.8;
+  }
+}
+.parent > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.parent > div:nth-child(3) > button {
+  border: 1px solid #ffffff;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.500211px;
+  color: #ffffff;
+  background-color: #19191b;
+  border-radius: 5px;
+  padding: 0.7rem 2rem;
+  margin-left: 10rem;
+}
+@media (max-width: 1100px) {
+  .parent > div:nth-child(3) > button {
+    margin-left: 4rem;
+  }
+}
+
+/* DropDown */
+
+.dropdown {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  font-family: "Nunito Sans";
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 1000045;
+  color: black;
+  display: none;
+}
+
+.dropdownC {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  left: 0%;
+  min-width: 160px;
+  z-index: 1000027;
+  list-style: none;
+  font-family: "Nunito Sans";
+}
+
+.dropdown:hover .dropdownC {
+  background-color: #0f1320;
+  display: block;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent > div:nth-child(3) img {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .dropdown {
+    display: block;
+    color: white;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  .parent > div:nth-child(2) {
+    display: none;
+    flex: 0;
+  }
+
+  .parent > div:nth-child(3) {
+    flex: 3;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 550px) {
+    .parent {
+        padding: 2rem 1rem;
+    }
+    .parent > div:nth-child(3) > * {
+        display: none;
+    }
+    
+  .parent > div:nth-child(3) img {
+    display: block;
+  }
+}
