@@ -12,3 +12,6 @@
   font-family: 'Graphik';
   src: url('../Fonts/Graphik Family/Graphik-Bold-Trial.otf') format('truetype');
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

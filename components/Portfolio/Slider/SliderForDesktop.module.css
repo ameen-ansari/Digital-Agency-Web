@@ -4,18 +4,16 @@
 .cardsParent12 img {
     width: 90%;
     margin: auto;
+    position: relative;
     z-index: 236347673;
 }
 
-.div1{
-    position: relative;
+.div1 img{
     bottom: 2rem;    
 }
-.div3{
-    position: relative;
+.div3 img{
     bottom: -2rem;    
 }
-.div4{
-    position: relative;
+.div4 img{
     bottom: 0rem;    
 }
