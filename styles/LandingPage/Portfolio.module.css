@@ -7,12 +7,19 @@
   position: relative;
 }
 
-.parent > div:nth-child(2) {
+.parent > div:nth-child(2)  {
   display: flex;
   gap: 1rem;
   position: relative;
   bottom: 4rem;
-  padding: 10rem 0px;
+  padding: 10rem 0px 0px 0px;
+  width: 100% !important;
+}
+.parent > div:nth-child(2) > div {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 6rem 0px;
 }
 
 .parent > p:nth-child(1) {

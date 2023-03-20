@@ -4,6 +4,18 @@ import union from "/Images/Navbar/Sort.svg";
 import Image from "next/image";
 
 function Navbar() {
+  let showOffC = () => {
+    let offC = document.getElementById("offC");
+    offC.style.top = "0vh";
+    offC.style.display = "flex";
+    offC.style.transition = "0.2s";
+  };
+  let removeOffC = () => {
+    let offC = document.getElementById("offC");
+    console.log('jkhfjds');
+    offC.style.top = "-100vh";
+    offC.style.transition = "0.2s";
+  };
   return (
     <div className={style.parent}>
       <div>
@@ -34,7 +46,27 @@ function Navbar() {
           </ul>
         </div>
         <button>Contact us</button>
-        <Image src={union} alt="union" />
+        <Image style={{cursor:'pointer'}} onClick={showOffC} src={union} alt="union" />
+      </div>
+      <div id="offC" className={style.offcanvas}>
+        <div>
+          <p className={style.cencel} onClick={removeOffC} >
+            X
+          </p>
+          <p
+            style={{ cursor: "pointer" }}
+          >
+            Home
+          </p>
+          <p
+            style={{ cursor: "pointer" }}
+          >
+            Services
+          </p>
+          <p>Our Projects</p>
+          <p>About Us</p>
+          <button>Contact Us</button>
+        </div>
       </div>
     </div>
   );

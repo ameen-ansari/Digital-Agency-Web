@@ -7,6 +7,7 @@ import img4 from "/Images/Portfolio/Group 162512.svg";
 import Slider from "./Slider/Slider";
 import img5 from '../../Images/Header/Vector 13.svg'
 import img6 from '../../Images/Header/Group 162526.svg'
+import SliderForDEsktop from "./Slider/SliderForDesktop";
 
 function Portfolio() {
     let images = [
@@ -17,11 +18,12 @@ function Portfolio() {
   return (
     <div className={style.parent}>
       <p>Our Awesome Portofolio</p>
-      <div className={style.cardsParent}>
+      <SliderForDEsktop />
+      {/* <div className={style.cardsParent}>
         <Image src={img1} alt="portfolio1" />
         <Image src={img2} alt="portfolio2" />
         <Image src={img3} alt="portfolio3" />
-      </div>
+      </div> */}
       <Image src={img4} alt="ooo" />
       <Slider images={images} />
       <Image className={style.img1} src={img5} alt="ooo" />

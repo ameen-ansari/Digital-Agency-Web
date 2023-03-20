@@ -142,3 +142,65 @@
     display: block;
   }
 }
+
+
+/* Offcanvas */
+.offcanvas {
+  width: 100%;
+height: 100vh;
+position: absolute;
+top:0%;
+left: 0%;
+top: -100vh;
+z-index: 106768400;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: white;
+background-color: #19191B;
+background-position: center;
+transition: 1.5s;
+z-index: 7653676;
+display: none;
+}
+
+.offcanvas > div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+}
+
+.offcanvas p {
+  font-family: "Nunito Sans";
+font-size: 24px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0px;
+cursor: pointer;
+}
+.cencel {
+position: absolute;
+top: 1.5rem;
+right: 1.5rem;
+}
+
+
+.offcanvas button{
+  border: 1px solid #ffffff;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.500211px;
+  color: #ffffff;
+  background-color: #19191b;
+  border-radius: 5px;
+  padding: 0.7rem 2rem;
+  margin-left: 10rem;
+  margin: auto;
+}
