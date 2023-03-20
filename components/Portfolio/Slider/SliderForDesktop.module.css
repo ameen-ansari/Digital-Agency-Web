@@ -1,19 +1,50 @@
 .cardsParent12 {
-    padding: 4rem 0px ;
+  /* padding: 4rem 0px; */
+  display: flex;
 }
 .cardsParent12 img {
-    width: 90%;
-    margin: auto;
-    position: relative;
-    z-index: 236347673;
+  width: 100% !important;
+  margin: 6rem auto 2rem;
+  position: relative;
+  z-index: 236347673;
+  padding: 0px 0.5rem;
 }
-
-.div1 img{
-    bottom: 2rem;    
+.img1 {
+  bottom: 6rem;
 }
-.div3 img{
-    bottom: -2rem;    
+.img2 {
+  bottom: 3rem;
 }
-.div4 img{
-    bottom: 0rem;    
+.img3 {
+  bottom: 0rem;
 }
+.img4 {
+  bottom: 3rem;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 0 0px;
+    cursor: pointer !important;
+    transform: scale(1.2);
+  }
+  
+.active {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #5454d4 !important;
+    margin: 0 0px;
+    cursor: pointer !important;
+    transform: scale(1.2);
+  }
+  
+  
+  .dotsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

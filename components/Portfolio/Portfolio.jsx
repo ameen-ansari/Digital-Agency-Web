@@ -19,12 +19,7 @@ function Portfolio() {
     <div className={style.parent}>
       <p>Our Awesome Portofolio</p>
       <SliderForDEsktop />
-      {/* <div className={style.cardsParent}>
-        <Image src={img1} alt="portfolio1" />
-        <Image src={img2} alt="portfolio2" />
-        <Image src={img3} alt="portfolio3" />
-      </div> */}
-      <Image src={img4} alt="ooo" />
+      <Image style={{display:'none'}} src={img4} alt="ooo" />
       <Slider images={images} />
       <Image className={style.img1} src={img5} alt="ooo" />
       <Image className={style.img2} src={img6} alt="ooo" />
