@@ -3,6 +3,8 @@ import img from "/Images/Header/BG (3).svg";
 import style from "@/styles/LandingPage/MovieSec.module.css";
 
 function MovieSec() {
+
+  let src = "https://youtu.be/vClv4Q2hSgo"
   return (
     <div className={style.parent}>
       <div>
@@ -13,8 +15,13 @@ function MovieSec() {
         </p>
       </div>
       <div>
-        <iframe src="https://youtu.be/embed/vClv4Q2hSgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen >
-        </iframe>
+      <iframe
+          src="https://www.youtube-nocookie.com/embed/ToZSFHUJdHM"
+          title="Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   );
