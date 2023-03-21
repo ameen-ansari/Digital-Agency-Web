@@ -13,7 +13,8 @@ function MovieSec() {
         </p>
       </div>
       <div>
-        <Image src={img} alt="video" />
+        <iframe src="https://youtu.be/embed/vClv4Q2hSgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen >
+        </iframe>
       </div>
     </div>
   );

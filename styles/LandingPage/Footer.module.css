@@ -21,6 +21,7 @@
 
 .parent>  div > p {
   font-family: "Nunito Sans";
+  cursor: pointer;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

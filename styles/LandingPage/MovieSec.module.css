@@ -28,18 +28,13 @@
         height: 500px !important;
       }
 }
-@media (min-width:800px) {
-    .parent {
-        gap: 5rem;
-     }
-     .parent {
-        padding: 5rem 0px;
-     }
-      
-}
 @media (min-width:600px) {
     .parent {
-        gap: 2rem;
+        gap: 4rem;
+     }
+
+    .parent iframe {
+      padding-bottom: 3rem;
      }
       
 }

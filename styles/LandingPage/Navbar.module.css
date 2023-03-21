@@ -41,6 +41,14 @@
     flex: 1.8;
   }
 }
+
+.parent p {
+  cursor: pointer;
+}
+
+.parent button{
+  cursor: pointer;
+}
 .parent > div:nth-child(3) {
   display: flex;
   justify-content: center;
