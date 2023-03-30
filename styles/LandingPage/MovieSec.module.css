@@ -1,7 +1,7 @@
 .parent {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0px;
+  padding: 12rem 0px 3rem 0px;
 }
 .parent > div:nth-child(2) {
   width: 100%;
@@ -16,7 +16,11 @@
   margin: auto;
   display: flex;
 }
-
+@media (max-width:750px) {
+.parent {
+  padding: 7rem 0px 3rem 0px;
+}
+}
 @media (max-width:800px) {
     .parent > div:nth-child(1) {
         width: 90%;
@@ -60,7 +64,7 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 60px;
   line-height: 70px;
   color: #ffffff;
   padding-right:1rem ;

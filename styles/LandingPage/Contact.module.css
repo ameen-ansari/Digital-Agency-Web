@@ -2,22 +2,13 @@
   width: 100%;
   margin: auto;
   display: flex;
-  padding: 8rem 3rem;
+  padding: 10rem 5rem;
   position: relative;
   background: rgba(30, 30, 32, 0.5);
 }
 
-@media (max-width:800px) {
-    .parent{
-        flex-direction: column;
-        gap: 2rem;
-    }
-}
-@media (max-width:600px) {
-.parent{
-    padding: 5rem 1.5rem ;
-}
-}
+
+
 
 .parent > p {
   flex: 1.5;
@@ -30,7 +21,7 @@
 }
 .parent > div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex: 0.8;
 }
@@ -59,17 +50,32 @@
         font-size: 38px;
         line-height: 42px;
     }
+    .parent > div {
+      justify-content: center;
+    }
 }
 
 
 .img1 {
     position: absolute;
-    bottom:1rem;
-    left:1rem;
+    bottom:3rem;
+    left:5rem;
 }
 
 .img2 {
     position: absolute;
-    top:1rem;
-    right:1rem;
+    top:3rem;
+    right:5rem;
 }
+
+@media (max-width:600px) {
+  .parent{
+      padding: 10rem 1.5rem ;
+  }
+  .img1 {
+    left: 2rem;
+  }
+  .img2 {
+    right: 2rem;
+  }
+  }

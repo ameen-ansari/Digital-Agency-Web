@@ -27,7 +27,7 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 60px;
   line-height: 70px;
   width: 60%;
   margin: auto;
@@ -47,7 +47,7 @@
 
 .plus1 {
   position: absolute;
-  top: 0%;
+  top: -5rem;
   right: 0%;
   transform: rotate(65deg);
 }
@@ -63,9 +63,12 @@
 @media (max-width:600px) {
     .plus1 {
         position: absolute;
-        top: 0%;
+        top: -5rem;
         right: 0%;
         transform: rotate(0deg);
+      }
+      .parent > p {
+        padding-right: 2rem;
       }
       
       .plus2 {

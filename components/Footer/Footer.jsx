@@ -13,7 +13,7 @@ function Footer() {
         <p>Privacy Policy</p>
         <p>Terms and Conditions</p>
       </div>
-      <div>
+      <div className="flex justify-center align-middle">
         <p>© 2020 Enver, All Rights Reserved</p>
       </div>
     </div>

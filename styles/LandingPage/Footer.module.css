@@ -39,6 +39,11 @@
 .parent > div:nth-child(3) {
     text-align: right ;
 }
+.parent > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width:800px) {
     .parent {
         flex-direction: column;
