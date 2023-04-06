@@ -9,7 +9,7 @@ function Footer() {
         <Image src={logo} alt="logo" />
       </div>
       <div>
-        <p >Support</p>
+        <p>Support</p>
         <p>Privacy Policy</p>
         <p>Terms and Conditions</p>
       </div>

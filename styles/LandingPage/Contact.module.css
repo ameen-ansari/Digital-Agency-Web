@@ -2,7 +2,7 @@
   width: 100%;
   margin: auto;
   display: flex;
-  padding: 10rem 5rem;
+  padding: 10rem 2rem;
   position: relative;
   background: rgba(30, 30, 32, 0.5);
 }
@@ -11,19 +11,22 @@
 
 
 .parent > p {
-  flex: 1.5;
+  /* flex: ; */
+  padding-left: 4rem;
   font-family: "Graphik";
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 60px;
   line-height: 66px;
   color: #ffffff;
+  padding-right: 1rem;
 }
 .parent > div {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex: 0.8;
+  padding-right: 3rem;
 }
 
 .parent button {
@@ -47,11 +50,12 @@
         gap: 2rem;
     }
     .parent > p {
-        font-size: 38px;
-        line-height: 42px;
+        font-size: 36px;
+        line-height: 57px;
+        padding-left: 0%;
     }
     .parent > div {
-      justify-content: center;
+      justify-content: flex-start;
     }
 }
 
