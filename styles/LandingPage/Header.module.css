@@ -2,8 +2,9 @@
   display: flex;
   width: 90%;
   margin: auto;
-  padding: 8rem 0px 6rem 2rem;
+  padding: 3rem 0px 6rem 2rem;
   overflow: hidden;
+  position: relative;
 }
 
 .parent > div:nth-child(1) {
@@ -12,6 +13,8 @@
   justify-content: center;
   gap: 2rem;
   flex: 1;
+  position: relative;
+  z-index: 100001;
 }
 .parent > div:nth-child(1) > p:nth-child(1) {
   font-family: "Graphik";
@@ -116,6 +119,12 @@
   .img2 {
     left: 5%;
   }
+  .shade2 {
+    display: none;
+  }
+  .shade1 {
+    top: -20rem !important;
+  }
   .parent > div:nth-child(1) > p:nth-child(1) {
     line-height: 64px;
     font-size: 60px;
@@ -125,7 +134,7 @@
     flex-direction: column;
     width: 100%;
     gap: 4rem;
-    padding: 10rem 0px 6rem 0rem;
+    padding: 3rem 0px 6rem 0rem;
   }
   .parent > div:nth-child(1) {
     display: flex;
@@ -174,4 +183,28 @@
     bottom: -15%;
     transform: scale(0.7);
   }
+}
+
+
+
+.shade1 {
+  position: absolute;
+  z-index: 10000;
+  top:0%;
+  left: 0%;
+width: 100%;
+}
+.shade2 {
+  position: absolute;
+  z-index: 10000;
+  top:0%;
+  right: 0%;
+  width: 100%;
+}
+.shade3 {
+  position: absolute;
+  z-index: 10000;
+  top:0%;
+  right: 0%;
+  width: 100%;
 }

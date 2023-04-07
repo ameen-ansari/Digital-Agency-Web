@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   box-sizing: border-box;
   padding: 0%;
@@ -10,11 +13,8 @@
 }
 @font-face {
   font-family: 'Graphik';
-  src: url('../Fonts/Graphik Family/Graphik-Bold-Trial.otf') format('truetype');
+  src: url('../Fonts/Graphik Family/Graphik-Regular-Trial.otf') format('truetype');
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 button {
   cursor: pointer;

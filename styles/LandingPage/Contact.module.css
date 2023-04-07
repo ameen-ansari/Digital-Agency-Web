@@ -7,19 +7,15 @@
   background: rgba(30, 30, 32, 0.5);
 }
 
-
-
-
 .parent > p {
-  /* flex: ; */
-  padding-left: 4rem;
   font-family: "Graphik";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 66px;
   color: #ffffff;
-  padding-right: 1rem;
+  padding-right: 20%;
+  padding-left: 4rem;
 }
 .parent > div {
   display: flex;
@@ -44,37 +40,46 @@
   color: #ffffff;
 }
 
-@media (max-width:800px) {
-    .parent{
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .parent > p {
-        font-size: 36px;
-        line-height: 57px;
-        padding-left: 0%;
-    }
-    .parent > div {
-      justify-content: flex-start;
-    }
-}
-
-
 .img1 {
-    position: absolute;
-    bottom:3rem;
-    left:5rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 5rem;
 }
 
 .img2 {
-    position: absolute;
-    top:3rem;
-    right:5rem;
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+}
+@media (max-width: 800px) {
+  .parent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .parent > p {
+    font-size: 36px;
+    line-height: 57px;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+  .parent > div {
+    justify-content: flex-start;
+  }
+  .img1 {
+    transform: scale(0.7);
+    bottom: 5rem;
+    left: 0% !important;
+  }
+
+  .img2 {
+    transform: scale(0.7);
+    top: 6rem;
+  }
 }
 
-@media (max-width:600px) {
-  .parent{
-      padding: 10rem 1.5rem ;
+@media (max-width: 600px) {
+  .parent {
+    padding: 10rem 1.5rem;
   }
   .img1 {
     left: 2rem;
@@ -82,4 +87,4 @@
   .img2 {
     right: 2rem;
   }
-  }
+}

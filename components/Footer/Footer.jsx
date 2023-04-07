@@ -13,8 +13,8 @@ function Footer() {
         <p>Privacy Policy</p>
         <p>Terms and Conditions</p>
       </div>
-      <div className="flex justify-center align-middle">
-        <p>© 2020 Enver, All Rights Reserved</p>
+      <div className={`flex justify-center align-middle ${style.copyRightText}`}>
+        <span>© 2020 Enver, All Rights Reserved</span>
       </div>
     </div>
   );

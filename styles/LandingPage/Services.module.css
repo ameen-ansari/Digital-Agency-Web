@@ -1,5 +1,5 @@
 .parent {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -11,17 +11,7 @@
 .tri {
   position: absolute;
   top: 0%;
-  left: 0%;
-}
-
-@media (max-width: 851px) {
-  .tri {
-    top: -3rem;
-    left: -1rem;
-  }
-  .parent > p {
-    padding-top: 3rem;
-  }
+  left: 10%;
 }
 
 .parent > p {
@@ -30,19 +20,33 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 70px;
-  width: 60%;
+  width: 50%;
   margin: auto;
   text-align: center;
   color: #ffffff;
 }
 
+  
+  @media (max-width: 851px) {
+    .tri {
+      top: -3rem;
+      left: 0%;
+    }
+    .parent > p {
+      padding-top: 3rem;
+    }
+    .parent > p{
+      width: 90%;
+      padding-right: 2rem;
+    }
+  }
 .cardsParent {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem 0px;
-  padding: 5rem 0px 5rem 0px;
+  padding: 5rem;
   position: relative;
 }
 
@@ -59,7 +63,7 @@
   .plus2 {
     position: absolute;
     bottom: 0%;
-    left: 3%;
+    left: 6%;
     transform: rotate(20deg);
   }
 }
@@ -67,11 +71,12 @@
   .plus1 {
     position: absolute;
     top: 0rem;
-    right: 0%;
+    right: 3%;
     transform: scale(0.7);
   }
   .parent > p {
-    padding-right: 2rem;
+    padding-right: 0rem;
+    padding-top: 4rem;
   }
 
   .plus2 {
@@ -99,9 +104,6 @@
 @media (max-width: 850px) {
   .card {
     width: 45%;
-  }
-  .parent > p {
-    width: 100%;
   }
 }
 
@@ -142,4 +144,21 @@
   .card > p:nth-child(3) {
     font-size: 16px;
   }
+  .tri {
+    transform: scale(0.7);
+  }
 }
+
+.shade {
+  position: absolute;
+  top: -30rem ;
+  width: 50%;
+  left: 0%;
+}
+
+@media (max-width: 750px) {
+  .shade {
+    display: none;
+  }
+ }
+

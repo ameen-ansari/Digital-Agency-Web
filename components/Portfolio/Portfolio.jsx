@@ -8,7 +8,7 @@ import Slider from "./Slider/Slider";
 import img5 from '../../Images/Header/Vector 13.svg'
 import img6 from '../../Images/Header/Group 162526.svg'
 import SliderForDEsktop from "./Slider/SliderForDesktop";
-
+import shade from '/Images/Portfolio/Rectangle 9521 (1).svg'
 function Portfolio() {
     let images = [
         img1 ,
@@ -23,6 +23,7 @@ function Portfolio() {
       <Slider images={images} />
       <Image className={style.img1} src={img5} alt="ooo" />
       <Image className={style.img2} src={img6} alt="ooo" />
+      <Image className={style.shade} src={shade} alt="ooo" />
     </div>
   );
 }

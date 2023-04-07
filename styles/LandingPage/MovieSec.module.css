@@ -1,7 +1,7 @@
 .parent {
   display: flex;
   flex-direction: column;
-  padding: 12rem 0px 3rem 0px;
+  padding: 5rem 0px 3rem 0px;
   width: 85%;
   margin: auto;
 }
@@ -19,8 +19,10 @@
 }
 @media (max-width: 750px) {
   .parent {
-    padding: 7rem 0px 3rem 0px;
+    padding: 5rem 0px 3rem 0px;
+    width: 100%;
   }
+  
 }
 @media (max-width: 800px) {
   .parent > div:nth-child(1) {
