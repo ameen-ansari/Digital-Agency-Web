@@ -71,7 +71,7 @@
   .plus1 {
     position: absolute;
     top: 0rem;
-    right: 3%;
+    right: 5%;
     transform: scale(0.7);
   }
   .parent > p {
@@ -82,8 +82,11 @@
   .plus2 {
     position: absolute;
     bottom: 0%;
-    left: 0%;
+    left: 5%;
     transform: scale(0.7);
+  }
+  .cardsParent {
+    padding: 5rem 2rem;
   }
 }
 .card {

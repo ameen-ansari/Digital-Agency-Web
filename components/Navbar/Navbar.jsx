@@ -46,7 +46,7 @@ function Navbar() {
           </ul>
         </div>
         <button>Contact us</button>
-        <Image style={{cursor:'pointer'}} onClick={showOffC} src={union} alt="union" />
+        <Image style={{cursor:'pointer',position:'relative' ,zIndex:'1231231'}} onClick={showOffC} src={union} alt="union" />
       </div>
       <div id="offC" className={style.offcanvas}>
         <div>
